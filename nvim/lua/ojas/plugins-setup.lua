@@ -67,6 +67,9 @@ return packer.startup(function(use)
   -- configuring LSP servers
   use("neovim/nvim-lspconfig")
   
+  -- formatting and linting
+  use("jose-elias-alvarez/null-ls.nvim")
+  use("jayp0521/mason-null-ls.nvim")
   if packer_bootstrap then
     require("packer").sync()
   end
