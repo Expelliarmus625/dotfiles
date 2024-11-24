@@ -26,6 +26,8 @@ if not status then
 end
 
 return packer.startup(function(use)
+	--greeter
+	use("goolord/alpha-nvim")
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many other plugins use
 	use("bluz71/vim-nightfly-guicolors") -- preferred color scheme
