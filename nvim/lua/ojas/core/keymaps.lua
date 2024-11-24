@@ -6,6 +6,7 @@ local keymap = vim.keymap
 -- keymap.set("i", "jk", "<ESC>")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>")
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally

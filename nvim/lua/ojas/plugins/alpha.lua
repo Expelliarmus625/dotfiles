@@ -42,8 +42,9 @@ dashboard.section.buttons.val = {
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
+vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#ff79c6", bold = true })
 local function footer()
-	return " git better -f "
+	return "󰈸 Progress Above Perfection 󰈸"
 end
 
 dashboard.section.footer.val = footer()
