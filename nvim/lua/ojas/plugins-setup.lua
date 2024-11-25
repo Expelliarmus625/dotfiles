@@ -31,6 +31,19 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many other plugins use
 	use("bluz71/vim-nightfly-guicolors") -- preferred color scheme
+	use({
+		"folke/tokyonight.nvim",
+		config = function()
+			require("tokyonight").setup({
+				custom_highlights = function(colors)
+					return {
+						AlphaShortcut = { fg = colors.red },
+						AlphaHeader = { fg = colors.red },
+					}
+				end,
+			})
+		end,
+	})
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 	use("szw/vim-maximizer") -- maximizes and restores current window
 	-- essential plugins
@@ -81,7 +94,8 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
-
+	-- smear cursor
+	use("sphamba/smear-cursor.nvim")
 	-- git signs plugin
 	use("lewis6991/gitsigns.nvim")
 	if packer_bootstrap then

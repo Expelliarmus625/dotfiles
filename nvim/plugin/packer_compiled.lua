@@ -199,6 +199,11 @@ _G.packer_plugins = {
     path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
+  ["smear-cursor.nvim"] = {
+    loaded = true,
+    path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/smear-cursor.nvim",
+    url = "https://github.com/sphamba/smear-cursor.nvim"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -208,6 +213,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    config = { "\27LJ\2\n}\0\1\4\0\a\0\n5\1\3\0005\2\1\0009\3\0\0=\3\2\2=\2\4\0015\2\5\0009\3\0\0=\3\2\2=\2\6\1L\1\2\0\16AlphaHeader\1\0\1\afg\0\18AlphaShortcut\1\0\2\18AlphaShortcut\0\16AlphaHeader\0\afg\1\0\1\afg\0\bredm\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\22custom_highlights\1\0\1\22custom_highlights\0\0\nsetup\15tokyonight\frequire\0" },
+    loaded = true,
+    path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-maximizer"] = {
     loaded = true,
@@ -237,6 +248,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: tokyonight.nvim
+time([[Config for tokyonight.nvim]], true)
+try_loadstring("\27LJ\2\n}\0\1\4\0\a\0\n5\1\3\0005\2\1\0009\3\0\0=\3\2\2=\2\4\0015\2\5\0009\3\0\0=\3\2\2=\2\6\1L\1\2\0\16AlphaHeader\1\0\1\afg\0\18AlphaShortcut\1\0\2\18AlphaShortcut\0\16AlphaHeader\0\afg\1\0\1\afg\0\bredm\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\22custom_highlights\1\0\1\22custom_highlights\0\0\nsetup\15tokyonight\frequire\0", "config", "tokyonight.nvim")
+time([[Config for tokyonight.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
