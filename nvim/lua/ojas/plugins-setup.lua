@@ -27,7 +27,13 @@ end
 
 return packer.startup(function(use)
 	--greeter
-	use("goolord/alpha-nvim")
+	use({
+		"goolord/alpha-nvim",
+		config = function()
+			require("alpha.themes.dashboard").section.footer.val = require("alpha.fortune")
+			require("alpha").setup(require("alpha.themes.dashboard").opts)
+		end,
+	})
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim") -- lua functions that many other plugins use
 	use("bluz71/vim-nightfly-guicolors") -- preferred color scheme
@@ -79,6 +85,7 @@ return packer.startup(function(use)
 	-- managing and installing LSP servers
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
+	-- use({ "neoclide/coc.nvim", branch = "release" }) -- coc
 
 	-- configuring LSP servers
 	use("neovim/nvim-lspconfig")
@@ -98,6 +105,7 @@ return packer.startup(function(use)
 	use("sphamba/smear-cursor.nvim")
 	-- git signs plugin
 	use("lewis6991/gitsigns.nvim")
+	use("kdheepak/lazygit.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end

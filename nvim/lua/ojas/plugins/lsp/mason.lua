@@ -15,7 +15,12 @@ end
 local lspconfig = require("lspconfig")
 mason.setup()
 
-mason_lspconfig.setup()
+mason_lspconfig.setup({
+	ensure_installed = {
+		"lua_ls",
+		"yamlls",
+	},
+})
 mason_lspconfig.setup_handlers({
 	function(server_name)
 		lspconfig[server_name].setup({})
@@ -27,10 +32,14 @@ mason_lspconfig.setup_handlers({
 					schemas = {
 						["http://json.schemastore.org/github-workflow"] = ".github/workflows/*",
 						["http://json.schemastore.org/github-action"] = ".github/action.{yml,yaml}",
+						["https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json"] = "cloudformation/template/*",
 					},
 				},
 			},
 		})
+	end,
+	["lua_ls"] = function()
+		lspconfig.lua_ls.setup({})
 	end,
 })
 mason_null_ls.setup({

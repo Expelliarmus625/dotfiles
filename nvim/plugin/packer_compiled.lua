@@ -90,6 +90,7 @@ _G.packer_plugins = {
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
   ["alpha-nvim"] = {
+    config = { "\27LJ\2\n¤\1\0\0\5\0\t\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0006\1\0\0'\3\5\0B\1\2\2=\1\4\0006\0\0\0'\2\6\0B\0\2\0029\0\a\0006\2\0\0'\4\1\0B\2\2\0029\2\b\2B\0\2\1K\0\1\0\topts\nsetup\nalpha\18alpha.fortune\bval\vfooter\fsection\27alpha.themes.dashboard\frequire\0" },
     loaded = true,
     path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
@@ -123,6 +124,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/Users/ojas/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -252,6 +258,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for tokyonight.nvim]], true)
 try_loadstring("\27LJ\2\n}\0\1\4\0\a\0\n5\1\3\0005\2\1\0009\3\0\0=\3\2\2=\2\4\0015\2\5\0009\3\0\0=\3\2\2=\2\6\1L\1\2\0\16AlphaHeader\1\0\1\afg\0\18AlphaShortcut\1\0\2\18AlphaShortcut\0\16AlphaHeader\0\afg\1\0\1\afg\0\bredm\1\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0003\3\3\0=\3\5\2B\0\2\1K\0\1\0\22custom_highlights\1\0\1\22custom_highlights\0\0\nsetup\15tokyonight\frequire\0", "config", "tokyonight.nvim")
 time([[Config for tokyonight.nvim]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n¤\1\0\0\5\0\t\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0006\1\0\0'\3\5\0B\1\2\2=\1\4\0006\0\0\0'\2\6\0B\0\2\0029\0\a\0006\2\0\0'\4\1\0B\2\2\0029\2\b\2B\0\2\1K\0\1\0\topts\nsetup\nalpha\18alpha.fortune\bval\vfooter\fsection\27alpha.themes.dashboard\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -40,3 +40,8 @@ keymap.set("n", "<leader>gp", "<cmd>Gitsigns preview_hunk<CR>")
 keymap.set("n", "<leader>gb", "<cmd>Gitsigns blame_line<CR>")
 keymap.set("n", "<leader>gd", "<cmd>Gitsigns diffthis<CR>")
 keymap.set("n", "<leader>gn", "<cmd>Gitsigns next_hunk<CR>")
+
+-- lazygit
+keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>")
+-- lsp keymaps
+keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", {})
