@@ -45,3 +45,4 @@ keymap.set("n", "<leader>gn", "<cmd>Gitsigns next_hunk<CR>")
 keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>")
 -- lsp keymaps
 keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", {})
+keymap.set("n", "<leader>rr", "<cmd>lua vim.lsp.buf.references()<CR>", {})
