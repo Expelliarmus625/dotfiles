@@ -7,8 +7,8 @@ local lualine_tokyonight = require("lualine.themes.tokyonight")
 local new_colors = {
 	blue = "#65D1FF",
 	green = "#3EFFDC",
-	violet = "#FF61EF",
-	yellow = "#FFDA7B",
+	violet = "#BB9AF7",
+	yellow = "#FF007C",
 	black = "#000000",
 }
 lualine_tokyonight.normal.a.bg = new_colors.blue
