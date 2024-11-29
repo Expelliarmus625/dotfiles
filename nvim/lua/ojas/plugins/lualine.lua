@@ -25,5 +25,18 @@ lualine.setup({
 	options = {
 		-- theme = lualine_nightfly
 		theme = lualine_tokyonight,
+		component_separators = { left = "", right = "" },
+		section_separators = { left = "", right = "" },
+	},
+
+	sections = {
+		lualine_c = {
+			{
+				"filename",
+				file_status = true,
+				path = 1,
+				shorting_target = 40,
+			},
+		},
 	},
 })
